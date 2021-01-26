@@ -26,7 +26,7 @@ services:
   prometheus:
     image: 'docker.io/prom/prometheus'
     volumes:
-      - ./prometheus/:/etc/prometheus/
+      - prometheus/:/etc/prometheus/
     ports:
       - '9090:9090'
 

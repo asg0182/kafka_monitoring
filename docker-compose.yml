@@ -25,10 +25,10 @@ services:
 
   prometheus:
     image: 'docker.io/prom/prometheus'
-    volumes:
-      - type: bind
-        source: /tmp/prometheus
-        target: /etc/prometheus
+    # volumes:
+    #   - type: bind
+    #     source: /tmp/prometheus
+    #     target: /etc/prometheus
     ports:
       - '9090:9090'
     command:

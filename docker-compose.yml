@@ -27,7 +27,7 @@ services:
     image: 'docker.io/prom/prometheus'
     volumes:
       - type: bind
-        source: prometheus
+        source: /root/kafka_monitoring/prometheus
         target: /etc/prometheus
     ports:
       - '9090:9090'

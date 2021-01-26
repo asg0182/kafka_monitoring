@@ -38,7 +38,7 @@ services:
     ports:
       - '9308:9308'
     command:
-      - '--kafka.server=localhost:9092'
+      - '--kafka.server=kafka:9092'
       - '--no-sasl.handshake'
       - '--log.enable-sarama'
       - '--log.level=debug'

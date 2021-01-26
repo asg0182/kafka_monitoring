@@ -27,10 +27,12 @@ services:
     image: 'docker.io/prom/prometheus'
     volumes:
       - type: bind
-        source: /root/kafka_monitoring/prometheus
+        source: /tmp/prometheus
         target: /etc/prometheus
     ports:
       - '9090:9090'
+    command:
+      - '--log.level=debug'
 
   grafana:
     image: 'docker.io/grafana/grafana'

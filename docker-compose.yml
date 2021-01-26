@@ -29,6 +29,7 @@ services:
     #   - type: bind
     #     source: /tmp/prometheus
     #     target: /etc/prometheus
+    
     ports:
       - '9090:9090'
     command:
